@@ -12,7 +12,18 @@ function d(b, a) {
   return b + a;
 }
 
-const forwardBackward = c(a, b);
-const backwardForward = d(b, a);
-console.log(forwardBackward);
-console.log(backwardForward);
+const forBack = c(a, b);
+const backFor = d(b, a);
+
+const together = {
+	forBack: c(a, b),
+  backFor: d(b, a),
+  both: function(){
+    console.log(forBack);
+    console.log(backFor);
+    console.log(sentence + backFor);
+    return none;
+  }
+}
+
+console.log(together.both());
